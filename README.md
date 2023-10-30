@@ -16,3 +16,10 @@
 
 -   (TODO) `npm run hot` - frontend. `npm run hot-admin` - backoffice. - webpack hot reload.
 -   (TODO) `npm run prod` - production build frontend. `npm run prod-admin` - production build backoffice. - webpack hot reload.
+
+1. make start
+2. make composer-install (при первом запуске)
+3. make migrate-and-seed
+4. yarn
+5. yarn hot - frontend
+6. yarn hot-admin - backoffice
