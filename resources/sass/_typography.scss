@@ -1,0 +1,25 @@
+
+@mixin bebas-400() {
+    font-family: $bebas;
+    font-weight: 400;
+}
+
+@mixin oswald-700() {
+    font-family: $oswald;
+    font-weight: 700;
+}
+
+@mixin oswald-400() {
+    font-family: $oswald;
+    font-weight: 400;
+}
+
+@mixin roboto-c-500() {
+    font-family: $roboto;
+    font-weight: 500;
+}
+
+@mixin roboto-500() {
+    font-family: $roboto;
+    font-weight: 500;
+}
