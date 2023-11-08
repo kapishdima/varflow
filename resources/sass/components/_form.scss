@@ -1,0 +1,127 @@
+.done {
+  display: none;
+  place-items: center;
+  min-height: 680px;
+}
+
+.done-block {
+  display: grid;
+  place-items: center;
+
+  &__circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #4ea62f;
+    display: grid;
+    place-items: center;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+
+    &--status {
+      color: #000;
+      font-family: Oswald;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &--status-info {
+      color: #000;
+      font-family: Roboto Condensed;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.form {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  /* display: none; */
+  min-height: 680px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__item1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .form__item2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .form__item3 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .form__item4 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .form__item5 {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+
+  .form__item6 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+}
+
+.input {
+  padding: 30px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  border: 2px solid #d7d7d7;
+  color: #000;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  &:focus {
+    border: 2px solid #000;
+  }
+}
+
+.label {
+  color: #000;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.accent {
+  color: #e10707;
+}
+
+.textarea {
+  width: 100%;
+  resize: none;
+}
+@media screen and (max-width: 780px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+}

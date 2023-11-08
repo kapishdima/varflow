@@ -1,0 +1,64 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @include mobile() {
+      gap: 0;
+    }
+    &--text {
+      color: $black-2;
+      font-family: $bebas;
+      font-size: 62px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      @include mobile() {
+        font-size: 48px;
+      }
+    }
+
+    &--copyright {
+      color: $black;
+      font-family: $oswald;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  &__functional {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+
+    @include mobile() {
+      display: none;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      list-style-type: none;
+    }
+  }
+}
+
+.hover-green,
+svg,
+circle {
+  transition: all 0.3s ease-in-out;
+  color: black;
+  &:hover {
+    color: $green;
+  }
+}

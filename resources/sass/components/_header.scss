@@ -1,0 +1,88 @@
+.header {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  @include mobile() {
+    margin-top: 24px;
+  }
+
+  &__burger {
+    display: none;
+    @include mobile() {
+      display: block;
+    }
+  }
+  &__logo {
+    display: flex;
+    gap: 12px;
+    text-decoration: none;
+
+    &--text {
+      @include bebas-400();
+      color: #141415;
+      font-size: 24px;
+      font-style: normal;
+      line-height: normal;
+    }
+
+    &--image {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__right-block {
+    display: flex;
+    flex-direction: row;
+    gap: 65px;
+    align-items: center;
+
+    @include mobile() {
+      display: none;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    list-style-type: none;
+
+    &__item--link {
+      @include oswald-400();
+      color: $black;
+      font-size: 16px;
+      font-style: normal;
+      line-height: normal;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      list-style-type: none;
+
+      &--item {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

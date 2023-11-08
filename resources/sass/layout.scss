@@ -1,0 +1,46 @@
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.layout {
+  &__heading {
+    max-width: 560px;
+    @include oswald-400();
+    color: #000;
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-style: normal;
+
+    line-height: 64px; /* 133.333% */
+
+    @include mobile() {
+      font-size: 36px;
+      line-height: normal;
+    }
+  }
+  &__offer-section {
+    min-height: 580px;
+  }
+  &__projects-section {
+    min-height: 768px;
+  }
+  &__price-cards-section {
+    min-height: 685px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $cream-white;
+  }
+  &__about-us-section {
+    min-height: 685px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__reviews-section {
+    background-color: $cream-white;
+    min-height: 665px;
+    margin-bottom: 40px;
+  }
+}
