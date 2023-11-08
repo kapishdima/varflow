@@ -51,6 +51,12 @@
       list-style-type: none;
     }
   }
+  &__button {
+    @include link(215px, 46px, $white, $black, $black, $white);
+    &--icon {
+      @include icon(32px, 32px);
+    }
+  }
 }
 
 .hover-green,
