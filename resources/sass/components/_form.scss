@@ -125,3 +125,16 @@
     flex-direction: column;
   }
 }
+
+.form__button {
+  @include link(225px, 64px, $white, $black, $black, $white);
+  @include mobile() {
+    @include link(165px, 36px, $white, $black, $black, $white);
+  }
+  &--icon {
+    @include icon(50px, 50px);
+    @include mobile() {
+      @include icon(28px, 28px);
+    }
+  }
+}

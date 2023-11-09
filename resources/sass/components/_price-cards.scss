@@ -1,4 +1,4 @@
-.card {
+.price-card {
   max-width: 337px;
   min-height: 482px;
 
@@ -6,7 +6,7 @@
   border-radius: 30px;
 }
 
-.card-content {
+.price-card-content {
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -14,13 +14,13 @@
   padding: 25px 52px;
 }
 
-.card-content__top {
+.price-card-content__top {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.card-content__top--old {
+.price-card-content__top--old {
   color: #000;
   font-family: Oswald;
   font-size: 16px;
@@ -30,7 +30,7 @@
   text-decoration: line-through;
 }
 
-.card-content__top--actual {
+.price-card-content__top--actual {
   color: #4ea62f;
   font-family: Oswald;
   font-size: 36px;
@@ -39,7 +39,7 @@
   line-height: normal;
 }
 
-.card-content__top--service {
+.price-card-content__top--service {
   color: #000;
   font-family: Oswald;
   font-size: 24px;
@@ -48,14 +48,14 @@
   line-height: normal;
 }
 
-.card__list {
+.price-card__list {
   display: flex;
   flex-direction: column;
   gap: 8px;
   list-style-type: disc;
 }
 
-.card__list--item {
+.price-card__list--item {
   color: #000;
   font-family: Roboto Condensed;
   font-size: 16px;
@@ -68,65 +68,14 @@
   list-style-image: url("list.svg");
 }
 
-.card__link {
-  width: 225px;
-  height: 46px;
-  border-radius: 30px;
-
-  text-decoration: none;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding-left: 36px;
-  padding-right: 7px;
-
-  border: 1px solid black;
-  background-color: black;
-  color: #fff;
-  font-family: Roboto Condensed;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  transition: 0.3s all ease-in-out;
+.price-card__link {
+  @include link(225px, 46px, $white, $black, $black, $white);
+  &--icon {
+    @include icon(32px, 32px);
+  }
 }
 
-.card__link:hover {
-  background-color: white;
-  color: black;
-}
-
-.icon {
-  display: grid;
-  place-items: center;
-  width: 32px;
-  height: 32px;
-  background-color: white;
-  border-radius: 50%;
-}
-
-.path {
-  color: black;
-}
-
-.icon {
-  display: grid;
-  place-items: center;
-  width: 32px;
-  height: 32px;
-  background-color: white;
-  border-radius: 50%;
-
-  transition: transform 0.3s ease-in-out;
-}
-
-.card__link:hover .icon {
-  transform: rotate(-135deg);
-}
-
-.card__bottom-link {
+.price-card__bottom-link {
   align-self: center;
   color: #000;
   font-family: Roboto Condensed;
