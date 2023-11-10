@@ -7,21 +7,22 @@
 
         <div class="header__logo--text">Name Soon</div>
     </a>
-    <svg class="header__burger" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <button data-action="toggle-menu" class="burger-button"">
+        <svg class=" header__burger" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="18" cy="18" r="18" fill="#4EA62F" />
         <rect x="8" y="11" width="20" height="2" rx="1" fill="white" />
         <rect x="8" y="17" width="20" height="2" rx="1" fill="white" />
         <rect x="8" y="23" width="20" height="2" rx="1" fill="white" />
-    </svg>
-
+        </svg>
+    </button>
     <div class="header__right-block">
         <nav class="header__navigation navigation">
             <ul class="navigation__list list">
-                <li class="list__item"><a class="list__item--link" href="#">О нас</a></li>
-                <li class="list__item"><a class="list__item--link" href="#">Наши работы</a></li>
-                <li class="list__item"><a class="list__item--link" href="#">Цены</a></li>
-                <li class="list__item"><a class="list__item--link" href="#">Отзывы</a></li>
-                <li class="list__item"><a class="list__item--link" href="#">Контакты</a></li>
+                <li class="list__item"><a class="list__item--link" href="#aboutUs">О нас</a></li>
+                <li class="list__item"><a class="list__item--link" href="#ourWorks">Наши работы</a></li>
+                <li class="list__item"><a class="list__item--link" href="#price">Цены</a></li>
+                <li class="list__item"><a class="list__item--link" href="#reviews">Отзывы</a></li>
+                <li class="list__item"><a class="list__item--link" href="#contacts">Контакты</a></li>
             </ul>
         </nav>
 

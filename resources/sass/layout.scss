@@ -4,6 +4,7 @@
   padding: 0 15px;
 }
 .layout {
+  position: relative;
   &__heading {
     max-width: 560px;
     @include oswald-400();
@@ -12,7 +13,7 @@
     font-size: 48px;
     font-style: normal;
 
-    line-height: 64px; /* 133.333% */
+    line-height: 64px;
 
     @include mobile() {
       font-size: 36px;
@@ -20,6 +21,16 @@
     }
   }
   &__offer-section {
+    display: block;
+    @include mobile() {
+      display: none;
+    }
+    &-mobile {
+      display: none;
+      @include mobile() {
+        display: block;
+      }
+    }
   }
   &__projects-section {
     min-height: 768px;
@@ -43,3 +54,9 @@
     margin-bottom: 40px;
   }
 }
+// .burger {
+//   display: none;
+//   @include mobile() {
+//     display: block;
+//   }
+// }

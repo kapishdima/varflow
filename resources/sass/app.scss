@@ -14,8 +14,10 @@
 @import "./components/about-us-section";
 @import "./components/reviews-section";
 @import "./components/offer-section";
+@import "./components/burger-menu";
 
 * {
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   outline: none;

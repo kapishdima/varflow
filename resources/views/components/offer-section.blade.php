@@ -28,6 +28,6 @@
                 <p class="skill-cards__card--body">Крутых <br> проектов</p>
             </div>
         </div>
-        <img src="/resources/images/offer-section-img.png" alt="offer img">
+        <img class="offer-section__right--image" src="{{ viteAsset('resources/images/offer-section-img.png') }}" alt="offer img">
     </div>
 </div>

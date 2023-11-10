@@ -1,6 +1,6 @@
 .offer-section {
   margin-top: 100px;
-  margin-bottom: 160px;
+  margin-bottom: 137px;
 
   display: flex;
   justify-content: space-between;
@@ -24,21 +24,26 @@
     }
   }
 
-  &__link--icon {
+  &__link {
+    align-self: flex-start;
+    border: none;
+    @include link(225px, 64px, $white, $green, $black, $green);
+    &--icon {
+      @include icon(50px, 50px);
+    }
   }
 
   &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    &--image {
+      max-width: 530px;
+    }
   }
 }
-.link {
-  @include link(225px, 64px, $white, $black, $black, $white);
-  &__icon {
-    @include icon(50px, 50px);
-  }
 
-  &__icon--path {
-  }
-}
 .green {
   color: $green;
 }
@@ -46,6 +51,9 @@
 .skill-cards {
   display: flex;
   gap: 8px;
+  @include mobile() {
+    gap: 6px;
+  }
   &__card {
     width: 128px;
     height: 122px;
@@ -56,6 +64,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include mobile() {
+      width: 104px;
+      height: 104px;
+    }
   }
 
   &__card--head {
@@ -66,6 +78,11 @@
     font-style: normal;
 
     line-height: normal;
+
+    @include mobile() {
+      padding-left: 10px;
+      font-size: 24px;
+    }
   }
 
   &__card--body {
@@ -75,5 +92,54 @@
     font-size: 14px;
     font-style: normal;
     line-height: 16px; /* 114.286% */
+  }
+}
+
+.offer-section-mobile {
+  margin-top: 70px;
+  margin-bottom: 150px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  &__left {
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+
+  &__left--name {
+    @include bebas-400;
+    color: $black;
+
+    font-size: 96px;
+    font-style: normal;
+
+    line-height: normal;
+
+    @include mobile() {
+      font-size: 64px;
+    }
+  }
+
+  &__link {
+    align-self: flex-start;
+    border: none;
+    @include link(225px, 64px, $white, $green, $black, $green);
+    &--icon {
+      @include icon(50px, 50px);
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+
+    gap: 32px;
+    &--image {
+      max-width: 530px;
+    }
   }
 }
