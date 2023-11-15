@@ -10,7 +10,7 @@
     <div class="layout__offer-section container">
         @include ('components/offer-section')
     </div>
-    <div class="layout__offer-section-mobile container">
+    <div class=" layout__offer-section layout__offer-section--mobile container">
         @include ('components/offer-section-mobile')
     </div>
     @include('components.ticker')

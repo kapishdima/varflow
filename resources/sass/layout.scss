@@ -25,7 +25,7 @@
     @include mobile() {
       display: none;
     }
-    &-mobile {
+    &--mobile {
       display: none;
       @include mobile() {
         display: block;

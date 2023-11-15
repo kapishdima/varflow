@@ -17,6 +17,10 @@
   font-family: $roboto-c;
   font-weight: 500;
 }
+@mixin roboto-c-400() {
+  font-family: $roboto-c;
+  font-weight: 400;
+}
 
 @mixin roboto-500() {
   font-family: $roboto;
