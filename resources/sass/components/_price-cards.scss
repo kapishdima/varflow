@@ -4,6 +4,13 @@
 
   background-color: white;
   border-radius: 30px;
+  @include mobile() {
+    width: 337px;
+    height: 482px;
+  }
+}
+.price-slider {
+  padding-bottom: 60px;
 }
 
 .price-card-content {
@@ -12,6 +19,9 @@
   gap: 35px;
 
   padding: 25px 52px;
+  @include mobile() {
+    padding: 25px 52px 46px;
+  }
 }
 
 .price-card-content__top {
@@ -65,7 +75,7 @@
 
   margin-left: 20px;
 
-  list-style-image: url("list.svg");
+  list-style-image: url();
 }
 
 .price-card__link {
@@ -103,7 +113,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1150px) {
     display: none;
   }
 }

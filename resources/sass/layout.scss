@@ -41,6 +41,9 @@
       margin-top: 60px;
     }
   }
+  &__form-section {
+    margin-top: 60px;
+  }
   &__more-projects {
     margin-top: 100px;
     @include mobile() {
@@ -53,7 +56,18 @@
     justify-content: center;
     align-items: center;
     background-color: $cream-white;
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
+  &__price-cards-section--mobile {
+    display: none;
+    @media screen and (max-width: 1024px) {
+      background-color: $cream-white;
+      display: block;
+    }
+  }
+
   &__about-us-section {
     min-height: 685px;
     display: flex;

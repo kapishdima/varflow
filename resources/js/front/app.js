@@ -64,11 +64,11 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   })
-  let swiper3 = new Swiper("#js-projects", {
+  let swiper3 = new Swiper("#js-cards", {
     direction: "horizontal",
     modules: [Autoplay],
-    spaceBetween: 30,
-    slidesPerView: 1,
+    spaceBetween: 10,
+    slidesPerView: 1.1,
     speed: 10000,
 
     grabCursor: true,
@@ -76,8 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     breakpoints: {
       768: {
-        slidesPerView: 2.4,
-        spaceBetween: 30,
+        slidesPerView: 3,
+        spaceBetween: 50,
       },
     },
   })

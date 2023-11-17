@@ -24,6 +24,14 @@
     <div id="price" class="layout__price-cards-section">
         @include('components.price-cards')
     </div>
+    <div id="price" class="layout__price-cards-section--mobile">
+        <div class='container'>
+            <h2 class="layout__heading layout__reviews-section--heading">
+                Цены
+            </h2>
+            @include('components.price-cards-section-mobile')
+        </div>
+    </div>
     <div class="layout__form-section container">
         <h2 class="layout__heading">
             Сделайте первый шаг к своему идеальному проекту
