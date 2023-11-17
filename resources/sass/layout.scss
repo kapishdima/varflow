@@ -69,4 +69,10 @@
       padding-top: 100px;
     }
   }
+  &__footer {
+    margin-top: 140px;
+    @include mobile() {
+      margin-top: 50px;
+    }
+  }
 }

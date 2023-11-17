@@ -1,0 +1,64 @@
+.project-card {
+  width: 460px;
+  height: 340px;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  padding: 10px 10px 35px;
+
+  background-color: $black;
+  text-decoration: none;
+
+  @include mobile() {
+    width: 342px;
+    height: 340px;
+  }
+  &__title {
+    color: $white;
+    @include oswald-400();
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+  }
+  &__description {
+    color: $white;
+    @include roboto-c-400();
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  &__image {
+    max-width: 440px;
+    height: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    &--left {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    &--right {
+    }
+  }
+}
+
+.circle {
+  background-color: $green;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+}

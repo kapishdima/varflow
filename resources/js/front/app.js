@@ -55,16 +55,28 @@ document.addEventListener("DOMContentLoaded", function () {
     speed: 10000,
 
     grabCursor: true,
-    // autoplay: {
-    //   delay: 1,
-    //   disableOnInteraction: true,
-    //   waitForTransition: true,
-    // },
     allowTouchMove: true,
 
     breakpoints: {
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2.4,
+        spaceBetween: 30,
+      },
+    },
+  })
+  let swiper3 = new Swiper("#js-projects", {
+    direction: "horizontal",
+    modules: [Autoplay],
+    spaceBetween: 30,
+    slidesPerView: 1,
+    speed: 10000,
+
+    grabCursor: true,
+    allowTouchMove: true,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2.4,
         spaceBetween: 30,
       },
     },

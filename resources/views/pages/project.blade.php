@@ -22,7 +22,7 @@
         </h2>
         @include('components.more-projects')
     </div>
-    <div id="contacts" class="container">
+    <div id="contacts" class="layout__footer container">
         @include('components/layout-footer')
     </div>
 </div>

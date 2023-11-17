@@ -1,4 +1,4 @@
-<div class="reviews-container">
+<div class="container">
     <div class="swiper-container" id="js-reviews">
         <div class="swiper-wrapper">
             <div class="swiper-slide ">
