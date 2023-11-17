@@ -1,3 +1,8 @@
+import Swiper from "swiper"
+import {Autoplay} from "swiper/modules"
+
+import "swiper/css"
+import "swiper/css/autoplay"
 document.addEventListener("DOMContentLoaded", function () {
   const menuButton = document.querySelector("[data-action='toggle-menu']")
   const menu = document.querySelector("[data-menu='menu']")
@@ -19,5 +24,49 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function () {
       menu.style.left = "-900px"
     })
+  })
+
+  let swiper = new Swiper("#js-carousel", {
+    modules: [Autoplay],
+
+    spaceBetween: 30,
+    slidesPerView: 3,
+
+    speed: 5000,
+    loop: true,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: true,
+      waitForTransition: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 10,
+        spaceBetween: 65,
+      },
+    },
+  })
+  let swiper2 = new Swiper("#js-reviews", {
+    direction: "horizontal",
+    modules: [Autoplay],
+    spaceBetween: 30,
+    slidesPerView: 1,
+    speed: 10000,
+
+    grabCursor: true,
+    // autoplay: {
+    //   delay: 1,
+    //   disableOnInteraction: true,
+    //   waitForTransition: true,
+    // },
+    allowTouchMove: true,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
   })
 })

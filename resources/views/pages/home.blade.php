@@ -33,7 +33,7 @@
 
     <div id="reviews" class="layout__reviews-section">
         <div class='container'>
-            <h2 class="layout__heading ">
+            <h2 class="layout__heading layout__reviews-section--heading">
                 Что о нас говорят наши клиенты
             </h2>
         </div>

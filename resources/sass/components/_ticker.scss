@@ -6,14 +6,10 @@
 .swiper-slide {
   width: 85px;
 }
-.swiper-container {
-  align-items: center;
-}
 .slide__content {
-  width: 85px;
-
-  display: grid;
-  place-items: center;
+  display: flex;
+  //   place-items: center;
+  align-items: center;
 
   color: $black;
   text-align: center;
@@ -25,9 +21,8 @@
 }
 
 .ticker {
-  height: 50px;
-  display: flex;
-  align-items: center;
+  width: 100vw;
+  padding: 15px 0;
 
   background-color: $light-green;
 }
