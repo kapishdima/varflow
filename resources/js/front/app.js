@@ -4,6 +4,27 @@ import {Autoplay} from "swiper/modules"
 import "swiper/css"
 import "swiper/css/autoplay"
 document.addEventListener("DOMContentLoaded", function () {
+  const dropdownMenu = document.querySelector(".dropdown-menu")
+  const dropdownToggle = document.querySelector(".dropdown-toggle")
+  const selectedValueInput = document.getElementById("selectedValue")
+
+  dropdownToggle.addEventListener("click", function () {
+    dropdownMenu.classList.toggle("show")
+  })
+
+  dropdownMenu.addEventListener("click", function (event) {
+    const selectedOption = event.target.closest(".dropdown-item")
+    if (selectedOption) {
+      const value = selectedOption.getAttribute("data-value")
+      const textContent = selectedOption.textContent.trim()
+
+      dropdownToggle.textContent = textContent
+      selectedValueInput.value = value
+
+      dropdownMenu.classList.remove("show")
+    }
+  })
+
   const menuButton = document.querySelector("[data-action='toggle-menu']")
   const menu = document.querySelector("[data-menu='menu']")
   const closeButton = document.querySelector("[data-action='close-menu']")

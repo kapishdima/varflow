@@ -7,7 +7,19 @@
         <label class="label" for="number">Ваш телефон <span class="accent">*</span></label>
         <input class="input" placeholder="+38 (0 _ _ ) _ _ _ _-_ _-_ _" id="number" name="number" />
     </div>
-    <div class="form__item3"><label class="label" for="">Что вас интересует</label></div>
+    <div class="form__item3"><label class="label" for="">Что вас интересует</label>
+        <div class="dropdown">
+            <input class="dropdown-input" type="hidden" id="selectedValue" name="selectedValue" value="">
+            <button class="dropdown-toggle" id="dropdownMenuButton" type="button" aria-haspopup="true" aria-expanded="false">
+                Выберите значение
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <p class="dropdown-item" data-value="value1">Значение 1</p>
+                <p class="dropdown-item" data-value="value2">Значение 2</p>
+                <p class="dropdown-item" data-value="value3">Значение 3</p>
+            </div>
+        </div>
+    </div>
     <div class="form__item4">
         <label class="label" for="budget">Бюджет проекта</label>
         <input class="input" placeholder="100 ГРН" id="budget" name="budget" />
@@ -41,3 +53,6 @@
         </div>
     </div>
 </div>
+<style>
+
+</style>
