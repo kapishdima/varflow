@@ -18,7 +18,7 @@
         @include('components/about-us-section')
     </div>
     <div id="ourWorks" class="layout__projects-section">
-
+        @include('components.case-section')
     </div>
 
     <div id="price" class="layout__price-cards-section">

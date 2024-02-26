@@ -1,0 +1,39 @@
+.case {
+  height: 768px;
+  overflow: hidden;
+
+  position: relative;
+  &__slider {
+    height: 100%;
+    max-height: 458px;
+    // background-color: lightgray;
+    &:first-child {
+      //   background-color: lightblue;
+    }
+    &:last-child {
+      //   background-color: lightgreen;
+    }
+  }
+}
+.mama {
+  position: absolute;
+  transform: rotate(-30deg);
+  top: -45%;
+  left: -0%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.slider {
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  &__slide {
+    border-radius: 20px;
+    width: 460px;
+    height: 100%;
+  }
+}
