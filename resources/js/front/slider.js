@@ -1,62 +1,142 @@
 import Swiper from "swiper"
 import {Autoplay} from "swiper/modules"
+import "swiper/css"
+import "swiper/css/autoplay"
 
 export function initializeSwipers() {
-  document.addEventListener("DOMContentLoaded", function () {
-    let swiper = new Swiper("#js-carousel", {
-      modules: [Autoplay],
+  let swiper = new Swiper("#js-carousel", {
+    modules: [Autoplay],
 
-      spaceBetween: 30,
-      slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerView: 3,
 
-      speed: 5000,
-      loop: true,
-      allowTouchMove: false,
-      autoplay: {
-        delay: 1,
-        disableOnInteraction: true,
+    speed: 5000,
+    loop: true,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: true,
+      waitForTransition: true,
+    },
+    breakpoints: {
+      1417: {
+        slidesPerView: 10,
+        spaceBetween: 65,
+      },
+      768: {
+        slidesPerView: 5,
+        spaceBetween: 65,
+      },
+    },
+  })
+  let swiper2 = new Swiper("#js-reviews", {
+    direction: "horizontal",
+    modules: [Autoplay],
+    spaceBetween: 30,
+    slidesPerView: 1,
+    speed: 10000,
+
+    grabCursor: true,
+    allowTouchMove: true,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2.4,
+        spaceBetween: 30,
+      },
+    },
+  })
+  let swiper3 = new Swiper("#js-cards", {
+    direction: "horizontal",
+    modules: [Autoplay],
+    spaceBetween: 10,
+    slidesPerView: 1.1,
+    speed: 10000,
+
+    grabCursor: true,
+    allowTouchMove: true,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+    },
+  })
+
+  //CASE SECTION SLIDER--------------------------------
+
+  let CaseTopSlider = new Swiper("#case-top", {
+    direction: "horizontal",
+    modules: [Autoplay],
+    spaceBetween: 30,
+    slidesPerView: 3,
+    loop: true,
+    grabCursor: true,
+    allowTouchMove: true,
+    effect: "slide",
+    grabCursor: true,
+    allowTouchMove: true,
+    speed: 5000,
+    autoplay: {
+      delay: 0,
+      reverseDirection: true,
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
         waitForTransition: true,
       },
-      breakpoints: {
-        768: {
-          slidesPerView: 10,
-          spaceBetween: 65,
-        },
+    },
+  })
+
+  let CaseMiddleSlider = new Swiper("#case-middle", {
+    direction: "horizontal",
+    modules: [Autoplay],
+    spaceBetween: 30,
+    slidesPerView: 3,
+    loop: true,
+    grabCursor: true,
+    allowTouchMove: true,
+    effect: "slide",
+    grabCursor: true,
+    allowTouchMove: true,
+    speed: 5000,
+    autoplay: {
+      delay: 0,
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        waitForTransition: true,
       },
-    })
-    let swiper2 = new Swiper("#js-reviews", {
-      direction: "horizontal",
-      modules: [Autoplay],
-      spaceBetween: 30,
-      slidesPerView: 1,
-      speed: 10000,
+    },
+  })
 
-      grabCursor: true,
-      allowTouchMove: true,
+  let CaseBottomSlider = new Swiper("#case-bottom", {
+    direction: "horizontal",
+    modules: [Autoplay],
+    spaceBetween: 30,
+    slidesPerView: 3,
+    loop: true,
+    grabCursor: true,
+    allowTouchMove: true,
+    effect: "slide",
+    grabCursor: true,
+    allowTouchMove: true,
+    speed: 5000,
+    autoplay: {
+      delay: 0,
+      reverseDirection: true,
+    },
 
-      breakpoints: {
-        768: {
-          slidesPerView: 2.4,
-          spaceBetween: 30,
-        },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        waitForTransition: true,
       },
-    })
-    let swiper3 = new Swiper("#js-cards", {
-      direction: "horizontal",
-      modules: [Autoplay],
-      spaceBetween: 10,
-      slidesPerView: 1.1,
-      speed: 10000,
-
-      grabCursor: true,
-      allowTouchMove: true,
-
-      breakpoints: {
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 50,
-        },
-      },
-    })
+    },
   })
 }
