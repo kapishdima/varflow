@@ -103,4 +103,76 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   })
+  let swiper4 = new Swiper("#case-middle", {
+    direction: "horizontal",
+    modules: [Autoplay],
+    spaceBetween: 30,
+    slidesPerView: 3,
+    loop: true,
+    grabCursor: true,
+    allowTouchMove: true,
+    effect: "slide",
+    grabCursor: true,
+    allowTouchMove: true,
+    speed: 5000,
+    autoplay: {
+      delay: 0,
+      reverseDirection: true,
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        waitForTransition: true,
+      },
+    },
+  })
+
+  let swiper5 = new Swiper("#case-top", {
+    direction: "horizontal",
+    modules: [Autoplay],
+    spaceBetween: 30,
+    slidesPerView: 3,
+    loop: true,
+    grabCursor: true,
+    allowTouchMove: true,
+    effect: "slide",
+    grabCursor: true,
+    allowTouchMove: true,
+    speed: 5000,
+    autoplay: {
+      delay: 0,
+      reverseDirection: true,
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        waitForTransition: true,
+      },
+    },
+  })
+  let swiper6 = new Swiper("#case-bottom", {
+    direction: "horizontal",
+    modules: [Autoplay],
+    spaceBetween: 30,
+    slidesPerView: 3,
+    loop: true,
+    grabCursor: true,
+    allowTouchMove: true,
+    effect: "slide",
+    grabCursor: true,
+    allowTouchMove: true,
+    speed: 5000,
+    autoplay: {
+      delay: 0,
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        waitForTransition: true,
+      },
+    },
+  })
 })
