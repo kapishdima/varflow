@@ -1,5 +1,5 @@
 <div class="case">
-    <div class="mama">
+    <div class="case__content">
         <div class="case__slider slider slider__wrapper">
             <div class="swiper-container" id="case-top">
                 <div class="swiper-wrapper">
@@ -26,18 +26,23 @@
             <div class="swiper-container" id="case-middle">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide case__slide">
+                        <a class="case__link" href="#CaseLink"></a>
                         <img src="{{ viteAsset('resources/images/projects/thanx.png') }}" alt="" class="slider__slide"></img>
                     </div>
                     <div class="swiper-slide case__slide">
+                        <a class="case__link" href="#CaseLink"></a>
                         <img src="{{ viteAsset('resources/images/projects/thanx.png') }}" alt="" class="slider__slide"></img>
                     </div>
                     <div class="swiper-slide case__slide">
+                        <a class="case__link" href="#CaseLink"></a>
                         <img src="{{ viteAsset('resources/images/projects/thanx.png') }}" alt="" class="slider__slide"></img>
                     </div>
                     <div class="swiper-slide case__slide">
+                        <a class="case__link" href="#CaseLink"></a>
                         <img src="{{ viteAsset('resources/images/projects/thanx.png') }}" alt="" class="slider__slide"></img>
                     </div>
                     <div class="swiper-slide case__slide">
+                        <a class="case__link" href="#CaseLink"></a>
                         <img src="{{ viteAsset('resources/images/projects/thanx.png') }}" alt="" class="slider__slide"></img>
                     </div>
                 </div>
