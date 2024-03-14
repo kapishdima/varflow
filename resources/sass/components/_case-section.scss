@@ -1,18 +1,15 @@
 .case {
-  height: 768px;
+  height: 50vh;
   overflow: hidden;
 
   position: relative;
   &__slider {
-    width: 1440px;
+    width: 100dvw;
     height: 100%;
     max-height: 458px;
   }
   &__slide {
     position: relative;
-    &:hover {
-      transform: scale(1.05);
-    }
   }
   &__link {
     width: 100%;
