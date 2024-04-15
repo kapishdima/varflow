@@ -18,7 +18,15 @@
         @include('components/about-us-section')
     </div>
     <div id="ourWorks" class="layout__projects-section">
-        @include('components.case-section')
+        <div class="mobile-hidden">@include('components.case-section')</div>
+        <div class="container">
+            <div class="desktop-hidden">
+                <h2 class="layout__heading">
+                    Наши работы
+                </h2>
+                @include('components.case-section-mobile')
+            </div>
+        </div>
     </div>
 
     <div id="price" class="layout__price-cards-section">

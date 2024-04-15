@@ -109,4 +109,22 @@ export function initializeSwipers() {
       reverseDirection: true,
     },
   })
+
+  let CaseMobileSlider = new Swiper("#case-mobile", {
+    direction: "horizontal",
+    modules: [Autoplay],
+    spaceBetween: 30,
+    slidesPerView: 1,
+    speed: 10000,
+
+    grabCursor: true,
+    allowTouchMove: true,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2.4,
+        spaceBetween: 30,
+      },
+    },
+  })
 }

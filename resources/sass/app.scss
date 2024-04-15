@@ -20,17 +20,31 @@
 @import "./components/case-section";
 
 * {
-  scroll-behavior: smooth;
-  padding: 0;
-  margin: 0;
-  outline: none;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    outline: none;
 }
 
 body {
-  background-color: $white;
-  overflow-x: hidden;
+    background-color: $white;
+    overflow-x: hidden;
 
-  &.active {
-    overflow-y: hidden;
-  }
+    &.active {
+        overflow-y: hidden;
+    }
+}
+
+.mobile-hidden {
+    @include mobile() {
+        display: none;
+    }
+}
+
+.desktop-hidden {
+    display: none;
+
+    @include mobile() {
+        display: block;
+    }
 }
