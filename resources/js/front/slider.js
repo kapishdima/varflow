@@ -36,10 +36,13 @@ export function initializeSwipers() {
     slidesPerView: 1,
     speed: 10000,
 
-    grabCursor: true,
+    // grabCursor: true,
     allowTouchMove: true,
 
     breakpoints: {
+      500: {
+        slidesPerView: 1.2,
+      },
       768: {
         slidesPerView: 2.4,
         spaceBetween: 30,
@@ -48,18 +51,14 @@ export function initializeSwipers() {
   })
   let swiper3 = new Swiper("#js-cards", {
     direction: "horizontal",
-    modules: [Autoplay],
-    spaceBetween: 10,
-    slidesPerView: 1.1,
-    speed: 10000,
+    // spaceBetween: 10,
+    slidesPerView: 1,
 
-    grabCursor: true,
     allowTouchMove: true,
-
     breakpoints: {
-      768: {
+      720: {
+        allowTouchMove: true,
         slidesPerView: 2,
-        spaceBetween: 50,
       },
     },
   })
@@ -112,19 +111,9 @@ export function initializeSwipers() {
 
   let CaseMobileSlider = new Swiper("#case-mobile", {
     direction: "horizontal",
-    modules: [Autoplay],
     spaceBetween: 30,
     slidesPerView: 1,
-    speed: 10000,
 
-    grabCursor: true,
     allowTouchMove: true,
-
-    breakpoints: {
-      768: {
-        slidesPerView: 2.4,
-        spaceBetween: 30,
-      },
-    },
   })
 }

@@ -21,7 +21,7 @@
         <div class="mobile-hidden">@include('components.case-section')</div>
         <div class="container">
             <div class="desktop-hidden">
-                <h2 class="layout__heading">
+                <h2 class="layout__heading layout__reviews-section--heading">
                     Наши работы
                 </h2>
                 @include('components.case-section-mobile')
