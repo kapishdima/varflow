@@ -47,58 +47,6 @@
     line-height: normal;
 }
 
-.done {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #fff;
-    z-index: 9999;
-    justify-content: center;
-    align-items: center;
-}
-
-.done-block {
-    display: grid;
-    place-items: center;
-
-    &__circle {
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        background-color: #4ea62f;
-        display: grid;
-        place-items: center;
-    }
-
-    &__text {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-
-        &--status {
-            color: #000;
-            font-family: Oswald;
-            font-size: 64px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-
-        &--status-info {
-            color: #000;
-            font-family: Roboto Condensed;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-    }
-}
-
 .form {
     max-width: 1200px;
     margin: 0 auto;

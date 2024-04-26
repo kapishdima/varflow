@@ -59,4 +59,5 @@
         @include('components/layout-footer')
     </div>
 </div>
+@include('components/success-modal')
 @endsection

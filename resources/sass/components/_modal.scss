@@ -1,0 +1,126 @@
+.micromodal.is-open {
+    display: block;
+}
+
+.micromodal {
+    display: none;
+
+    &__overlay {
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.65);
+    }
+
+    &__container {
+        box-sizing: content-box;
+        overflow-y: auto;
+        max-width: 1000px;
+        width: 100%;
+        height: auto;
+        padding: 50px;
+        background-color: #fff;
+        border-radius: 4px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__close {
+        cursor: pointer;
+        align-self: flex-end;
+
+        background-color: transparent;
+        border: none;
+    }
+}
+
+
+
+.micromodal[aria-hidden="false"] .micromodal__overlay {
+    animation: microModalFadeIn .2s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal[aria-hidden="false"] .micromodal__container {
+    animation: microModalSlideIn .2s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal .micromodal__container,
+.micromodal .micromodal__overlay {
+    will-change: transform;
+}
+
+@keyframes microModalFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes microModalSlideIn {
+    from {
+        transform: translateY(15%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.done-block {
+    display: grid;
+    place-items: center;
+
+    &__circle {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: #4ea62f;
+        display: grid;
+        place-items: center;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+
+        &--status {
+            color: #000;
+            font-family: Oswald;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+
+            @include mobile() {
+                font-size: 32px;
+            }
+        }
+
+        &--status-info {
+            color: #000;
+            font-family: Roboto Condensed;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            @include mobile() {
+                font-size: 16px;
+            }
+        }
+    }
+}

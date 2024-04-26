@@ -16,6 +16,7 @@
     "dependencies": {
         "gsap": "^3.3.4",
         "imask": "^6.4.2",
+        "micromodal": "^0.4.10",
         "swiper": "^11.0.3"
     }
 }
