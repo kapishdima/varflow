@@ -4,16 +4,15 @@
     @include('components/burger-menu')
 </div>
 <div class="layout">
-    <div class="layout__header container">
-        @include('components/layout-header')
+    <div class="layout__first-screen">
+        <div class="layout__header container">
+            @include('components/layout-header')
+        </div>
+        <div class="layout__offer-section container">
+            @include ('components/offer-section')
+        </div>
+        @include('components.ticker')
     </div>
-    <div class="layout__offer-section container">
-        @include ('components/offer-section')
-    </div>
-    <div class=" layout__offer-section layout__offer-section--mobile container">
-        @include ('components/offer-section-mobile')
-    </div>
-    @include('components.ticker')
     <div id="aboutUs" class="layout__about-us-section container">
         @include('components/about-us-section')
     </div>

@@ -1,0 +1,76 @@
+.console {
+    border-radius: 20px;
+    background-color: $blue-700;
+    height: 100%;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 18px 30px;
+    }
+
+    &__controlls {
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+    }
+
+    &__text {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-width: 300px;
+    }
+
+    &__controll-item {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+
+        &:nth-child(1) {
+            background-color: #FE5F58;
+        }
+
+        &:nth-child(2) {
+            background-color: #FEBC2E;
+        }
+
+        &:nth-child(3) {
+            background-color: #28C840;
+        }
+    }
+
+    &__font {
+        font-family: Roboto Mono;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23.74px;
+        text-align: left;
+
+        @include mobile() {
+            font-size: 14px;
+        }
+
+        &--green {
+            color: #28C840;
+        }
+
+        &--orange {
+            color: #FEBC2E;
+        }
+
+        &--white {
+            color: #fff;
+        }
+
+        &--purple {
+            color: purple;
+        }
+    }
+}
+
+.highlight {
+    color: red;
+}

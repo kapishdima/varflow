@@ -2,10 +2,23 @@
     max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
+    width: 100%;
 }
 
 .layout {
     position: relative;
+
+    &__header {
+        width: 100%;
+        display: flex;
+    }
+
+    &__offer-section {
+        // height: 100%;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+    }
 
     &__heading {
         max-width: 560px;
@@ -23,23 +36,15 @@
         }
     }
 
-    &__offer-section {
-        display: block;
+    &__first-screen {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
 
-        @include mobile() {
-            display: none;
-        }
-
-        &--mobile {
-            display: none;
-
-            @include mobile() {
-                display: block;
-            }
-        }
+        justify-content: space-between;
     }
 
-    &__projects-section {}
 
     &__project-form-section {
         margin-top: 200px;

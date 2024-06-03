@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="footer__logo">
-        <h2 class="footer__logo--text">Name Soon</h2>
+        <h2 class="footer__logo--text">varflow</h2>
         <p class="footer__logo--copyright">© 2023 Все права защищены</p>
     </div>
     <div class="footer__functional">
