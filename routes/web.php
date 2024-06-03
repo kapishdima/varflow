@@ -14,13 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::view('/panels/{path?}', 'backoffice.admin')->where('path', '.*');
+Route::view('/admin/{path?}', 'backoffice.admin')->where('path', '.*');
 
-Route::group(['prefix' => \Mcamara\LaravelLocalization\Facades\LaravelLocalization::setLocale()], function () {
-    Route::get('/', function () {
-        return view('pages.home');
-    });
-    Route::get('/project', function () {
-        return view('pages.project');
-    });
+Route::get('/', function () {
+    return view('pages.home');
+});
+Route::get('/project', function () {
+    return view('pages.project');
 });
