@@ -2,39 +2,49 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Http\Controllers\Controller;
+use App\Http\Requests\LoginRequest;
 use App\Http\Resources\UserResource;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
-class AuthController extends Controller
+class AuthController extends BaseAPIController
 {
-    public function login(Request $request)
+    public function login(LoginRequest $request)
     {
-        $hasAdmin = Auth::guard('api')->attempt($request->only('email', 'password'));
-        if (!$hasAdmin) {
-            abort(401);
+        if (!auth()->attempt($request->validated())) {
+            return $this->sendError("User not found", 401);
         }
 
-        $admin = auth('api')->user();
-        $token = $admin->createToken('Main Token')->plainTextToken;
+        $token = $request->user()->createToken(config('auth.token_key_auth'))->plainTextToken;
+        $user = auth('api')->user();
 
         $response = [
-            'admin' => new UserResource($admin),
+            'user' => new UserResource($user),
             'token' => $token,
         ];
 
-        return response($response, 201);
+        return $this->sendResponse($response, "Authorized");
     }
 
-    public function logout(Request $request)
+    public function logout()
     {
-        if (auth('api')->user()) {
-            auth('api')->user()->tokens()->delete();
-        }
+        try {
+            $user = auth()->user();
 
-        return [
-            'message' => 'Logged out',
-        ];
+            if ($user !== null) {
+                $user->tokens()->delete();
+                return $this->sendSuccess('Successfully');
+            }
+        } catch (\Exception $error) {
+            return $this->sendError($error->getMessage(), 500);
+        }
+    }
+
+    public function me()
+    {
+        try {
+            $user = auth('api')->user();
+            return $this->sendResponse(new UserResource($user), "");
+        } catch (\Exception $error) {
+            return $this->sendError($error->getMessage(), 500);
+        }
     }
 }
