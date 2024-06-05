@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/admin/{path?}', 'backoffice.admin')->where('path', '.*');
 
-Route::get('/', function () {
-    return view('pages.home');
-});
-Route::get('/project', function () {
-    return view('pages.project');
-});
+// Route::group(['middleware' => 'web'], function () {
+// });
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/project', [HomeController::class, 'project'])->name('project');
