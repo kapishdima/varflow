@@ -40,11 +40,11 @@ export function consoleEffect() {
         element.innerHTML += nextChar
         currentCharIndex++
       }
-      setTimeout(() => typeCharacter(element, text), 100) // Скорость печатания (100 мс)
+      setTimeout(() => typeCharacter(element, text), 50) // Скорость печатания
     } else {
       currentCharIndex = 0
       currentParagraphIndex++
-      setTimeout(typeText, 500) // Пауза между строками (500 мс)
+      setTimeout(typeText, 80) // Пауза между строками
     }
   }
 
