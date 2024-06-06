@@ -17,7 +17,7 @@
                             <li class="price-card__list--item">Разработка прототипов</li>
                         </ul>
 
-                        <a class="link price-card__link" href="#">Начать проект
+                        <a class="link price-card__link" href="#startProject">Начать проект
 
                             <span class="link__icon price-card__link--icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -46,7 +46,7 @@
                             <li class="price-card__list--item">Разработка прототипов</li>
                         </ul>
 
-                        <a class="link price-card__link" href="#">Начать проект
+                        <a class="link price-card__link" href="#startProject">Начать проект
 
                             <span class="link__icon price-card__link--icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -75,7 +75,7 @@
                             <li class="price-card__list--item">Разработка прототипов</li>
                         </ul>
 
-                        <a class="link price-card__link" href="#">Начать проект
+                        <a class="link price-card__link" href="#startProject">Начать проект
 
                             <span class="link__icon price-card__link--icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">

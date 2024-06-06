@@ -1,6 +1,6 @@
 <div class="wrapper">
     <div class="parent">
-        <div class="div1 heading-lead"> О нас </div>
+        <h3 class="div1 heading-lead"> О нас </h3>
         <div class="div2 text">Наши идеи - ваше вдохновение. Мы - креативное агентство по разработке сайтов, и наша миссия
             -
             помочь вашему бизнесу процветать в цифровой эпохе.
@@ -12,7 +12,9 @@
         </div>
         <div class="div3">
             <ul class="list">
-                <li class="heading">UI/UX Дизайн</li>
+                <li>
+                    <h3 class="heading">UI/UX Дизайн</h3>
+                </li>
                 <li class="list__text">Исследование</li>
                 <li class="list__text">UX Дизайн</li>
                 <li class="list__text">Прототипирование</li>
@@ -24,7 +26,9 @@
         </div>
         <div class="div4">
             <ul class="list">
-                <li class="heading">Разработка</li>
+                <li>
+                    <h3 class="heading">Разработка</h3>
+                </li>
                 <li class="list__text">верстка</li>
                 <li class="list__text">Frontend</li>
                 <li class="list__text">Backend</li>
@@ -46,7 +50,7 @@
                             </svg>
                         </span>
                     </a>
-                    <a class="card__link" href="#">Начать проект
+                    <a class="card__link" href="#startProject">Начать проект
 
                         <span class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 14 14" fill="none">

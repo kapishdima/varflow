@@ -39,7 +39,7 @@
             @include('components.price-cards-section-mobile')
         </div>
     </div>
-    <div class="layout__form-section container">
+    <div id="startProject" class="layout__form-section container">
         <h2 class="layout__heading">
             Сделайте первый шаг к своему идеальному проекту
         </h2>

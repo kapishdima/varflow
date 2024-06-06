@@ -50,3 +50,23 @@ body {
         display: block;
     }
 }
+
+.hover-green {
+    transition: all 0.3s ease-in-out;
+    color: black;
+
+    &:hover {
+        color: $green;
+    }
+}
+
+.svg-icon {
+    transition: all 0.3s ease-in-out;
+    color: black;
+
+    &:hover {
+        .hover-green {
+            color: $green;
+        }
+    }
+}
