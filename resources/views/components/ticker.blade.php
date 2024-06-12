@@ -1,61 +1,21 @@
 <div class="ticker">
-    <div class="swiper-container" id="js-carousel">
+    <div class="swiper-container" id="ticker-slider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">UI/UX Дизайн</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">UI/UX Дизайн</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">UI/UX Дизайн</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">Оптимизация</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">Оптимизация</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">Оптимизация</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">Разработка</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">Разработка</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">Разработка</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">UI/UX Дизайн</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">UI/UX Дизайн</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">UI/UX Дизайн</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">Оптимизация</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">Оптимизация</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">Оптимизация</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">Разработка</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">Разработка</p>
-            </div>
-            <div class="swiper-slide" style="text-align: center">
-                <p class="slide__content">Разработка</p>
-            </div>
-
+            @foreach (explode('|', __('default.ticker_texts')) as $tickerItem)
+                <div class="swiper-slide" style="text-align: right">
+                    <p class="slide__content">{{ $tickerItem }}</p>
+                </div>
+            @endforeach
+            @foreach (explode('|', __('default.ticker_texts')) as $tickerItem)
+                <div class="swiper-slide" style="text-align: right">
+                    <p class="slide__content">{{ $tickerItem }}</p>
+                </div>
+            @endforeach
+            @foreach (explode('|', __('default.ticker_texts')) as $tickerItem)
+                <div class="swiper-slide" style="text-align: right">
+                    <p class="slide__content">{{ $tickerItem }}</p>
+                </div>
+            @endforeach
         </div>
     </div>
 </div>

@@ -22,10 +22,28 @@
     min-width: 160px;
     z-index: 1;
     padding: 24px 32px;
-    border-radius: 20px;
-    overflow: hidden;
+
+    border-bottom-left-radius: 20px;
+    // border-bottom-right-radius: 20px;
+    overflow-y: scroll;
     transition: max-height 0.3s ease-in-out;
     gap: 24px;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #ddd;
+    }
+
+    /* Handle on hover */
 }
 
 .dropdown-menu.show {
@@ -58,7 +76,7 @@
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 
-    &>div {
+    & > div {
         display: flex;
         flex-direction: column;
     }
