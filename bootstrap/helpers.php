@@ -27,7 +27,7 @@ if (!function_exists('useFrontStyles')) {
 if (!function_exists('useFrontJS')) {
     function useFrontJS()
     {
-        return Vite::useBuildDirectory('build/front')->withEntryPoints(['resources/js/front/app.js', 'resources/js/front/preloader/index.js']);
+        return Vite::useBuildDirectory('build/front')->withEntryPoints(['resources/js/front/app.js']);
     }
 }
 
