@@ -23,7 +23,7 @@
                     <h2 class="layout__heading layout__reviews-section--heading">
                         Наши работы
                     </h2>
-                    @include('components.case-section-mobile')
+                    @include('components.case-section-mobile', ['projects' => $projects])
                 </div>
             </div>
         </div>
