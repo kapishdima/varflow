@@ -76,6 +76,7 @@ export function initializeSwipers() {
         speed: 5200,
         autoplay: {
             delay: 0,
+            disableOnInteraction: true,
             reverseDirection: true,
         },
     });
@@ -91,6 +92,7 @@ export function initializeSwipers() {
         speed: 5000,
         autoplay: {
             delay: 0,
+            disableOnInteraction: true,
         },
     });
 
@@ -106,6 +108,7 @@ export function initializeSwipers() {
         autoplay: {
             delay: 0,
             reverseDirection: true,
+            disableOnInteraction: true,
         },
     });
 
