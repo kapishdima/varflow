@@ -30,21 +30,21 @@
         border-radius: 50%;
 
         &:nth-child(1) {
-            background-color: #FE5F58;
+            background-color: #fe5f58;
         }
 
         &:nth-child(2) {
-            background-color: #FEBC2E;
+            background-color: #febc2e;
         }
 
         &:nth-child(3) {
-            background-color: #28C840;
+            background-color: #28c840;
         }
     }
 
     &__font {
         font-family: Roboto Mono;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         line-height: 23.74px;
         text-align: left;
@@ -54,11 +54,11 @@
         }
 
         &--green {
-            color: #28C840;
+            color: #28c840;
         }
 
         &--orange {
-            color: #FEBC2E;
+            color: #febc2e;
         }
 
         &--white {

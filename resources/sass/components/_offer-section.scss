@@ -1,6 +1,5 @@
 .offer-section {
     &__wrapper {
-
         display: flex;
         justify-content: space-between;
 
@@ -9,7 +8,6 @@
             gap: 40px;
         }
     }
-
 
     &__name {
         display: flex;
@@ -53,12 +51,11 @@
 
             @include mobile() {
                 align-items: center;
-
             }
         }
 
         &--right {
-            max-width: 512px;
+            max-width: 600px;
             width: 100%;
             height: 293px;
         }
