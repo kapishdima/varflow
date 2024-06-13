@@ -3,6 +3,7 @@
 /public/*
 !/public/index.php
 /storage/*.key
+!/storage/app/public/images/*
 /vendor
 /.history
 .history
