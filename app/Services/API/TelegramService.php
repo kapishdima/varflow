@@ -23,7 +23,7 @@ class TelegramService
         $content = implode("\n", [$title, $name, $phone, $workCategory, $budget, $message]);
 
         $this->telegram->sendMessage([
-            "chat_id" => "-4198178896",
+            "chat_id" => "-4211858041",
             "text" => $content,
             "parse_mode" => "html"
         ]);
