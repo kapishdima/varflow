@@ -1,0 +1,58 @@
+@mixin link($width, $height, $color, $bg-color, $hover-color, $hover-bg-color) {
+  width: $width;
+  height: $height;
+  color: $color;
+  background-color: $bg-color;
+  hover-bg-color: $hover-bg-color;
+  &:hover {
+    color: $hover-color;
+    background-color: $hover-bg-color;
+  }
+}
+@mixin icon($width, $height) {
+  width: $width;
+  height: $height;
+}
+.link {
+  border-radius: 30px;
+
+  text-decoration: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 36px;
+  padding-right: 7px;
+
+  border: 1px solid $black;
+
+  @include roboto-c-500;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  transition: 0.3s all ease-in-out;
+
+  @include mobile() {
+    font-size: 14px;
+    padding-left: 27px;
+  }
+
+  &__icon {
+    display: grid;
+    place-items: center;
+    background-color: $white;
+    border-radius: 50%;
+
+    transition: transform 0.3s ease-in-out;
+
+    &--path {
+      color: black;
+    }
+  }
+
+  &:hover &__icon,
+  &-green &__icon {
+    transform: rotate(-135deg);
+  }
+}

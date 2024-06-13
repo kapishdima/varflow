@@ -4,20 +4,20 @@ namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
 use App\Models\Locale;
-use App\Services\API\TranslationsService;
+use App\Models\Project;
+use App\Models\Review;
 
 class HomeController extends Controller
 {
-    public function __construct(
-        private TranslationsService $translationServise,
-    ) {
+    public function __construct()
+    {
     }
 
     public function index()
     {
-        $locale = Locale::where('locale', \App::getLocale())->first();
+        $projects = Project::all();
+        $reviews = Review::all();
 
-        return view('pages.home', [
-        ]);
+        return view('pages.home', ["projects" => $projects, "reviews" => $reviews]);
     }
 }

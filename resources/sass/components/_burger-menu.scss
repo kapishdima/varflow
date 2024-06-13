@@ -1,0 +1,98 @@
+.menu {
+    padding-left: 25px;
+    padding-right: 16px;
+    position: fixed;
+    top: 0;
+    left: -900px;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 110vh;
+    background-color: $green;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    transition: all 0.3s ease-in-out;
+
+    display: none;
+
+    @include mobile() {
+        display: flex;
+    }
+
+    &-top {
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__close {
+            display: flex;
+            align-items: center;
+            border: none;
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        &--text {
+            color: $white;
+            @include bebas-400();
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        &--item {
+            color: $white;
+            @include oswald-400();
+            font-size: 32px;
+            font-style: normal;
+            line-height: normal;
+            text-decoration: none;
+
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.menu__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.menu__list--item {
+    color: $white;
+    @include oswald-400();
+    font-size: 32px;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+}

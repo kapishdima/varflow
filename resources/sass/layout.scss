@@ -1,0 +1,115 @@
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.layout {
+    position: relative;
+
+    &__header {
+        width: 100%;
+        display: flex;
+    }
+
+    &__offer-section {
+        // height: 100%;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+    }
+
+    &__heading {
+        max-width: 560px;
+        @include oswald-400();
+        color: #000;
+        margin-bottom: 50px;
+        font-size: 48px;
+        font-style: normal;
+
+        line-height: 64px;
+
+        @include mobile() {
+            font-size: 36px;
+            line-height: normal;
+        }
+    }
+
+    &__first-screen {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+    }
+
+
+    &__project-form-section {
+        margin-top: 200px;
+
+        @include mobile() {
+            margin-top: 60px;
+        }
+    }
+
+    &__form-section {
+        margin-top: 60px;
+    }
+
+    &__more-projects {
+        margin-top: 100px;
+
+        @include mobile() {
+            margin-top: 60px;
+        }
+    }
+
+    &__price-cards-section {
+        min-height: 685px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $cream-white;
+
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+
+    &__price-cards-section--mobile {
+        display: none;
+
+        @media screen and (max-width: 1024px) {
+            background-color: $cream-white;
+            display: block;
+        }
+    }
+
+    &__about-us-section {
+        min-height: 685px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__reviews-section {
+        margin-top: 100px;
+        background-color: $cream-white;
+        margin-bottom: 40px;
+        padding-bottom: 126px;
+
+        &--heading {
+            padding-top: 100px;
+        }
+    }
+
+    &__footer {
+        margin-top: 140px;
+
+        @include mobile() {
+            margin-top: 50px;
+        }
+    }
+}

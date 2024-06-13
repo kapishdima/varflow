@@ -52,6 +52,11 @@ services:
     volumes:
       - ../:/app
     tty: true
+  adminer:
+    image: adminer:latest
+    restart: always
+    ports:
+      - "8090:8080"
   mailhog:
     image: mailhog/mailhog
     ports:

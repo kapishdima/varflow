@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Web\HomeController;
+use App\Http\Controllers\Web\ProjectsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,13 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::view('/panels/{path?}', 'backoffice.admin')->where('path', '.*');
+Route::view('/admin/{path?}', 'backoffice.admin')->where('path', '.*');
 
-Route::group(['prefix' => \Mcamara\LaravelLocalization\Facades\LaravelLocalization::setLocale()], function () {
-    Route::get('/', function () {
-        return view('pages.home');
-    });
-    Route::get('/project', function () {
-        return view('pages.project');
-    });
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/projects/{id}', [ProjectsController::class, 'show'])->name('show');
+Route::get('/projects/', [ProjectsController::class, 'index'])->name('index');

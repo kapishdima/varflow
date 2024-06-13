@@ -1,17 +1,74 @@
+@import "./null";
+@import "./fonts";
 @import "./vars";
 @import "./grid";
+@import "./typography";
+@import "./breakpoints";
+@import "./components/button";
+@import "./layout";
+@import "./components/footer";
+@import "./components/ticker";
+@import "./components/form";
+@import "./components/header";
+@import "./components/price-cards";
+@import "./components/about-us-section";
+@import "./components/reviews-section";
+@import "./components/offer-section";
+@import "./components/burger-menu";
+@import "./components/case-preview";
+@import "./components/more-projects";
+@import "./components/case-section";
+@import "./components/modal";
+@import "./components/console";
+
+@import "./components/projects";
 
 * {
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
     outline: none;
 }
 
 body {
+    background-color: $white;
     overflow-x: hidden;
-    background-color: $light;
 
     &.active {
         overflow-y: hidden;
+    }
+}
+
+.mobile-hidden {
+    @include mobile() {
+        display: none;
+    }
+}
+
+.desktop-hidden {
+    display: none;
+
+    @include mobile() {
+        display: block;
+    }
+}
+
+.hover-green {
+    transition: all 0.3s ease-in-out;
+    color: black;
+
+    &:hover {
+        color: $green;
+    }
+}
+
+.svg-icon {
+    transition: all 0.3s ease-in-out;
+    color: black;
+
+    &:hover {
+        .hover-green {
+            color: $green;
+        }
     }
 }
