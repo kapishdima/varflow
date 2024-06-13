@@ -1,42 +1,46 @@
 <form class="form" data-el="leed-form">
     <div class="form__item1">
-        <label class="label" for="name">Ваше имя <span class="accent">*</span> </label>
+        <label class="label" for="name">@lang('default.your_name') <span class="accent">*</span> </label>
         <input type="text" class="input" placeholder="Ваше имя" id="name" name="name" data-el="form-field"
             required />
     </div>
     <div class="form__item2">
-        <label class="label" for="phone">Ваш телефон <span class="accent">*</span></label>
+        <label class="label" for="phone">@lang('default.your_phone') <span class="accent">*</span></label>
         <input type="tel" class="input" placeholder="+38 (0 _ _ ) _ _ _ _-_ _-_ _" id="phone" name="phone"
             data-el="form-field" required />
     </div>
-    <div class="form__item3"><label class="label" for="">Что вас интересует</label>
+    <div class="form__item3"><label class="label" for="">@lang('default.your_goal')</label>
         <div class="dropdown">
             <input class="dropdown-input" type="hidden" id="work_category" name="work_category" value=""
                 data-el="form-field">
             <button class="dropdown-toggle" id="dropdownMenuButton" type="button" aria-haspopup="true"
                 aria-expanded="false">
-                Выберите значение
+                @lang('default.select_project_type')
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown-item" data-value="value1">Значение 1</p>
-                <p class="dropdown-item" data-value="value2">Значение 2</p>
-                <p class="dropdown-item" data-value="value3">Значение 3</p>
+                @foreach (explode('|', __('default.development_services')) as $developmentService)
+                    <p class="dropdown-item" data-value="{{ $developmentService }}">{{ $developmentService }}</p>
+                @endforeach
+                @foreach (explode('|', __('default.design_services')) as $designService)
+                    <p class="dropdown-item" data-value="{{ $designService }}">{{ $designService }}</p>
+                @endforeach
+
             </div>
         </div>
     </div>
     <div class="form__item4">
-        <label class="label" for="budget">Бюджет проекта</label>
+        <label class="label" for="budget">@lang('default.budget')</label>
         <input class="input" placeholder="100 ГРН" id="budget" name="budget" data-el="form-field" />
     </div>
     <div class="form__item5">
-        <label class="label" for="message">Сообщение</label>
+        <label class="label" for="message">@lang('default.message')</label>
         <div>
             <textarea name="message" id="message" class="input textarea" placeholder="Расскажите подробнее о проекте"
                 id="" cols="30" rows="10" data-el="form-field"></textarea>
         </div>
     </div>
     <div class="form__item6">
-        <button class="link form__button" type="submit">Начать проект
+        <button class="link form__button" type="submit">@lang('default.start_project_text')
             <span class="link__icon form__button--icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
                     fill="none">
