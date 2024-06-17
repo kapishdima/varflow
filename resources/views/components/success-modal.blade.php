@@ -1,7 +1,6 @@
-<!-- <button onclick="MicroModal.show('modal-1');">Open Modal Dialog</button> -->
-<div class="micromodal" id="modal-1" aria-hidden="true">
+<div class="micromodal" id="success-modal" aria-hidden="true">
     <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-        <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="success-modal-title">
             <button class="micromodal__close" aria-label="Close modal" data-micromodal-close><svg
                     xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
                     viewBox="0 0 24 24">

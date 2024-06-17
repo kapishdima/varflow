@@ -1,3 +1,5 @@
+import Micromodal from "micromodal";
+
 export const createLeedForm = () => {
     const leedFormEl = document.querySelector('[data-el="leed-form"]');
 
@@ -38,6 +40,9 @@ const onLeedSubmit = async (form) => {
     const result = await response.json();
 
     if (result.status === 200) {
-        document.getElementsByClassName("done").style.display = "grid";
+        Micromodal.show("success-modal");
+        setTimeout(() => {
+            Micromodal.close("success-modal");
+        }, 3000);
     }
 };

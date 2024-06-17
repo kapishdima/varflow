@@ -1,4 +1,4 @@
-<div class="case">
+<div class="case" data-el="case-container">
     <div class="case__content">
         <div class="case__slider slider slider__wrapper">
             <div class="swiper-container" id="case-top">

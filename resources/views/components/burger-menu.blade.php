@@ -19,11 +19,11 @@
     </div>
     <div class="menu__center">
         <ul class="menu__list">
-            <li><a class="menu__list--item" href="#aboutUs">@lang('default.about_us')</a></li>
-            <li><a class="menu__list--item" href="#ourWorks">@lang('default.our_works')</a></li>
-            <li><a class="menu__list--item" href="#price">@lang('default.prices')</a></li>
-            <li><a class="menu__list--item" href="#reviews">@lang('default.prices')</a></li>
-            <li><a class="menu__list--item" href="#contacts">@lang('default.contacts')</a></li>
+            <li><a class="menu__list--item" href="/#aboutUs">@lang('default.about_us')</a></li>
+            <li><a class="menu__list--item" href="/projects">@lang('default.our_works')</a></li>
+            <li><a class="menu__list--item" href="/#price-mobile">@lang('default.prices')</a></li>
+            <li><a class="menu__list--item" href="/#reviews">@lang('default.reviews')</a></li>
+            <li><a class="menu__list--item" href="/#contacts">@lang('default.contacts')</a></li>
         </ul>
     </div>
     <div class="menu__socials">

@@ -16,12 +16,12 @@
             </h2>
             @include('components.form')
         </div>
-        {{-- <div class="layout__more-projects container">
+        <div class="layout__more-projects container">
             <h2 class="layout__heading">
                 Больше проектов
             </h2>
-            @include('components.more-projects')
-        </div> --}}
+            @include('components.more-projects', ['projects' => $projects])
+        </div>
         <div id="contacts" class="layout__footer container">
             @include('components/layout-footer')
         </div>

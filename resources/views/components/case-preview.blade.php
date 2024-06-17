@@ -10,7 +10,8 @@
                     <h3 class="info-left__title">{{ $project->type }}</h3>
                     <div class="info-left-taggs">
                         @foreach (json_decode($project->tags, true) as $tag)
-                            <p class="info-left-taggs__tag">{{ $tag }}</p>
+                            <a href="/projects?tag={{ $tag }}"
+                                class="info-left-taggs__tag">{{ $tag }}</a>
                         @endforeach
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-<div class="price-slider">
+<div class="price-slider" id="price-mobile">
     <div class="swiper-container" id="js-prices">
         <div class="swiper-wrapper">
             <div class="swiper-slide price-card">

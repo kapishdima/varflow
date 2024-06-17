@@ -24,7 +24,7 @@
             <div class="list">
                 <h3 class="heading mobile-none">@lang('default.need_help_text')</h3>
                 <div class="buttons">
-                    <a class="card__link card__link--green" href="#">
+                    <a class="card__link card__link--green" href="#price">
                         @lang('default.get_price_text')
                         <span class="icon icon--green">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 14 14"
