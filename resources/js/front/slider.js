@@ -30,14 +30,11 @@ export function initializeSwipers() {
         },
     });
     let swiper2 = new Swiper("#js-reviews", {
-        direction: "horizontal",
         modules: [Autoplay],
         spaceBetween: 30,
-        slidesPerView: 1,
-        speed: 10000,
-
-        // grabCursor: true,
-        allowTouchMove: true,
+        slidesPerView: 1.2,
+        speed: 1000,
+        loop: true,
 
         breakpoints: {
             500: {
@@ -49,15 +46,12 @@ export function initializeSwipers() {
             },
         },
     });
-    let swiper3 = new Swiper("#js-cards", {
-        direction: "horizontal",
-        // spaceBetween: 10,
-        slidesPerView: 1,
+    let swiper3 = new Swiper("#js-prices", {
+        spaceBetween: 30,
+        slidesPerView: 1.2,
 
-        allowTouchMove: true,
         breakpoints: {
             720: {
-                allowTouchMove: true,
                 slidesPerView: 2,
             },
         },
@@ -115,7 +109,7 @@ export function initializeSwipers() {
     let CaseMobileSlider = new Swiper("#case-mobile", {
         direction: "horizontal",
         spaceBetween: 30,
-        slidesPerView: 1,
+        slidesPerView: 1.1,
 
         allowTouchMove: true,
     });

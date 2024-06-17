@@ -1,119 +1,120 @@
 .price-card {
-  max-width: 337px;
-  min-height: 482px;
+    max-width: 337px;
+    min-height: 482px;
 
-  background-color: $white;
-  border-radius: 30px;
-  @include mobile() {
-    width: 337px;
-    height: 482px;
-  }
+    background-color: $white;
+    border-radius: 30px;
+    @include mobile() {
+        max-width: 100%;
+        width: 100%;
+        height: 482px;
+    }
 }
 .price-slider {
-  padding-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 .price-card-content {
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 
-  padding: 25px 52px;
-  @include mobile() {
-    padding: 25px 52px 46px;
-  }
+    padding: 25px 52px;
+    @include mobile() {
+        padding: 25px 52px 46px;
+    }
 }
 
 .price-card-content__top {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .price-card-content__top--old {
-  color: $black;
-  font-family: Oswald;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-decoration: line-through;
+    color: $black;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: line-through;
 }
 
 .price-card-content__top--actual {
-  color: $green;
-  font-family: Oswald;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+    color: $green;
+    font-family: Oswald;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .price-card-content__top--service {
-  color: $black;
-  font-family: Oswald;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+    color: $black;
+    font-family: Oswald;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .price-card__list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-type: disc;
 }
 
 .price-card__list--item {
-  color: $black;
-  font-family: Roboto Condensed;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+    color: $black;
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 
-  margin-left: 20px;
+    margin-left: 20px;
 
-  list-style-image: url();
+    list-style-image: url();
 }
 
 .price-card__link {
-  @include link(225px, 46px, $white, $black, $black, $white);
-  &--icon {
-    @include icon(32px, 32px);
-  }
+    @include link(225px, 46px, $white, $black, $black, $white);
+    &--icon {
+        @include icon(32px, 32px);
+    }
 }
 
 .price-card__bottom-link {
-  align-self: center;
-  color: $black;
-  font-family: Roboto Condensed;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-decoration: underline;
+    align-self: center;
+    color: $black;
+    font-family: Roboto Condensed;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: underline;
 }
 
 .cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 .cards__rotated {
-  writing-mode: vertical-rl;
-  display: flex;
-  align-self: center;
-  color: #efefef;
-  font-family: Oswald;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  @media screen and (max-width: 1150px) {
-    display: none;
-  }
+    writing-mode: vertical-rl;
+    display: flex;
+    align-self: center;
+    color: #efefef;
+    font-family: Oswald;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @media screen and (max-width: 1150px) {
+        display: none;
+    }
 }

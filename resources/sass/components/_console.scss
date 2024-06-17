@@ -3,10 +3,19 @@
     background-color: $blue-700;
     height: 100%;
 
+    @include mobile() {
+        min-height: 260px;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
         padding: 18px 30px;
+        height: 100%;
+
+        @include mobile() {
+            padding: 14px 20px;
+        }
     }
 
     &__controlls {
@@ -21,6 +30,10 @@
         flex-direction: column;
         gap: 12px;
         max-width: 300px;
+
+        @include mobile() {
+            max-width: none;
+        }
     }
 
     &__controll-item {
