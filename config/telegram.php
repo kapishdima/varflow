@@ -58,7 +58,7 @@ return [
     | your default bot for regular use.
     |
     */
-    'default' => 'leed-bot',
+    'default' => 'varflow_leeds_bot',
 
     /*
     |--------------------------------------------------------------------------

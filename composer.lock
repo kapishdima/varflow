@@ -4284,16 +4284,16 @@
         },
         {
             "name": "spatie/laravel-sitemap",
-            "version": "7.2.0",
+            "version": "7.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-sitemap.git",
-                "reference": "4f79443e76a677731edfb4e89fac8816d11e194b"
+                "reference": "6d3d7637690a9710456a01bacabf5088f93ffe11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-sitemap/zipball/4f79443e76a677731edfb4e89fac8816d11e194b",
-                "reference": "4f79443e76a677731edfb4e89fac8816d11e194b",
+                "url": "https://api.github.com/repos/spatie/laravel-sitemap/zipball/6d3d7637690a9710456a01bacabf5088f93ffe11",
+                "reference": "6d3d7637690a9710456a01bacabf5088f93ffe11",
                 "shasum": ""
             },
             "require": {
@@ -4345,7 +4345,7 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/spatie/laravel-sitemap/tree/7.2.0"
+                "source": "https://github.com/spatie/laravel-sitemap/tree/7.2.1"
             },
             "funding": [
                 {
@@ -4353,7 +4353,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2024-02-15T10:50:21+00:00"
+            "time": "2024-05-21T12:31:34+00:00"
         },
         {
             "name": "spatie/robots-txt",

@@ -2,7 +2,6 @@
 
 namespace App\Services\API;
 
-use App\Models\SeoData;
 use Telegram\Bot\Api;
 
 class TelegramService
@@ -23,7 +22,7 @@ class TelegramService
         $content = implode("\n", [$title, $name, $phone, $workCategory, $budget, $message]);
 
         $this->telegram->sendMessage([
-            "chat_id" => "-4211858041",
+            "chat_id" => env("TELEGRAM_CHAT_ID" ?? ""),
             "text" => $content,
             "parse_mode" => "html"
         ]);
