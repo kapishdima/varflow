@@ -19,7 +19,7 @@
         <div id="ourWorks" class="layout__projects-section">
             <h2 class="heading-lead"
                 style="
-                margin-left: 200px;
+                margin-left: 183px;
                 margin-bottom: 50px;
             ">
                 Наши работы
