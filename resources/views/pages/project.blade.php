@@ -10,7 +10,7 @@
         <div class="layout__case container">
             @include('components/case-preview', ['project' => $project])
         </div>
-        <div class="layout__project-form-section container">
+        <div class="layout__project-form-section container" id="contact-form">
             <h2 class="layout__heading">
                 Сделайте первый шаг к своему идеальному проекту
             </h2>

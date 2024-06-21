@@ -16,7 +16,7 @@
                     </div>
                 </div>
                 <div class="info-left__bottom">
-                    <a class="info-left__bottom--link" href="#">@lang('default.need_same_project')</a>
+                    <a class="info-left__bottom--link" href="#contact-form">@lang('default.need_same_project')</a>
                     {{-- <a href="#" class="info-left__bottom--link">Как рассчитывалась цена для это проекта?</a> --}}
                 </div>
             </div>
