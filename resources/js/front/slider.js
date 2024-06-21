@@ -33,7 +33,7 @@ export function initializeSwipers() {
         modules: [Autoplay],
         spaceBetween: 30,
         slidesPerView: 1.2,
-        speed: 1000,
+        speed: 3000,
         loop: true,
         autoplay: {
             delay: 0,
