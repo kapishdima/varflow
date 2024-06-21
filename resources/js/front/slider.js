@@ -35,6 +35,9 @@ export function initializeSwipers() {
         slidesPerView: 1.2,
         speed: 1000,
         loop: true,
+        autoplay: {
+            delay: 0,
+        },
 
         breakpoints: {
             500: {
