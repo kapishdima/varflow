@@ -5,6 +5,14 @@
     width: 100%;
 }
 
+.layout__projects-section {
+    @include mobile() {
+        .heading-lead {
+            display: none;
+        }
+    }
+}
+
 .layout {
     position: relative;
 
