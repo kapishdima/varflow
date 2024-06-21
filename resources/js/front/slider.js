@@ -37,6 +37,7 @@ export function initializeSwipers() {
         loop: true,
         autoplay: {
             delay: 0,
+            pauseOnMouseEnter: true,
         },
 
         breakpoints: {
