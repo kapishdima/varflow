@@ -17,6 +17,14 @@
             @include('components/about-us-section')
         </div>
         <div id="ourWorks" class="layout__projects-section">
+            <h2 class="heading-lead"
+                style="
+                margin-left: 200px;
+                margin-bottom: 50px;
+            ">
+                Наши работы
+            </h2>
+
             <div class="mobile-hidden">@include('components.case-section', ['projects' => $projects])</div>
             <div class="container">
                 <div class="desktop-hidden">

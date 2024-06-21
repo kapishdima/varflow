@@ -32,7 +32,7 @@ return [
     "your_name" => "Ваше имя",
     "your_phone" => "Ваш телефон",
     "your_goal" => "Что вас интересует",
-    "select_project_type" => "Выберите значение",
+    "select_project_type" => "Выберите тип работы",
     "budget" => "Бюджет проекта",
     "message" => "Сообщение",
     "copyright" => "© 2023 Все права защищены",
