@@ -1,4 +1,4 @@
-<div class="swiper-container" id="js-reviews">
+<div class=" " id="js-reviews">
     <div class="swiper-wrapper">
 
         @foreach ($projects as $project)

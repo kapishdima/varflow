@@ -1,4 +1,4 @@
-<div class="swiper-container case-mobile-slider" id="case-mobile">
+<div class="swiper   case-mobile-slider" id="case-mobile">
     <div class="swiper-wrapper">
         @foreach ($projects as $project)
             <a href="/projects/{{ $project->id }}" class="swiper-slide case-mobile-slider__item">

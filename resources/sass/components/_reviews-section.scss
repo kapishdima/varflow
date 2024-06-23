@@ -1,3 +1,11 @@
+.swiper-reviews {
+    margin-left: 100px;
+
+    @include mobile() {
+        margin-left: 20px;
+    }
+}
+
 .card {
     // max-width: 460px;
     min-height: 265px;

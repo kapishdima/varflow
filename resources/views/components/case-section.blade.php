@@ -1,7 +1,7 @@
 <div class="case" data-el="case-container">
     <div class="case__content">
         <div class="case__slider slider slider__wrapper">
-            <div class="swiper-container" id="case-top">
+            <div class=" " id="case-top">
                 <div class="swiper-wrapper">
                     @foreach ($projects as $project)
                         <div class="swiper-slide case__slide">
@@ -15,7 +15,7 @@
         </div>
 
         <div class="case__slider slider slider__wrapper">
-            <div class="swiper-container" id="case-middle">
+            <div class=" " id="case-middle">
                 <div class="swiper-wrapper">
                     @foreach ($projects as $project)
                         <div class="swiper-slide case__slide">
@@ -29,7 +29,7 @@
         </div>
 
         <div class="case__slider slider slider__wrapper">
-            <div class="swiper-container" id="case-bottom">
+            <div class=" " id="case-bottom">
                 <div class="swiper-wrapper">
                     @foreach ($projects as $project)
                         <div class="swiper-slide case__slide">

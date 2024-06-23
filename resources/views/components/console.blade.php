@@ -5,7 +5,7 @@
             <div class="console__controll-item"></div>
             <div class="console__controll-item"></div>
         </div>
-        <div style="white-space: pre;" class="console__text">
+        <div class="console__text">
             <p class="console__font console__font--orange" style="display:none;">@lang('default.console_text_1')<span
                     class='console__font console__font--green'> VarFlow</span></p>
             <p class="console__font console__font--white" style="display:none;">@lang('default.console_text_2')</p>

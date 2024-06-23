@@ -16,7 +16,6 @@ export function initializeSwipers() {
         autoplay: {
             delay: 1,
             disableOnInteraction: false,
-            waitForTransition: true,
         },
         breakpoints: {
             1417: {
@@ -33,8 +32,10 @@ export function initializeSwipers() {
         modules: [Autoplay],
         spaceBetween: 30,
         slidesPerView: 1.2,
-        speed: 3000,
+        speed: 5000,
         loop: true,
+
+        allowTouchMove: false,
         autoplay: {
             delay: 0,
             pauseOnMouseEnter: true,

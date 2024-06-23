@@ -1,6 +1,5 @@
-<div class="container">
-    <div class="swiper-container" id="js-reviews">
-
+<div class="swiper-reviews">
+    <div class="swiper " id="js-reviews">
         <div class="swiper-wrapper">
             @foreach ($reviews as $review)
                 <div class="swiper-slide ">
@@ -42,4 +41,5 @@
 
         </div>
     </div>
+
 </div>
