@@ -32,14 +32,11 @@ export function initializeSwipers() {
         modules: [Autoplay],
         spaceBetween: 30,
         slidesPerView: 1.2,
-        speed: 5000,
+        speed: 500,
         loop: true,
+        direction: "horizontal",
 
-        allowTouchMove: false,
-        autoplay: {
-            delay: 0,
-            pauseOnMouseEnter: true,
-        },
+        allowTouchMove: true,
 
         breakpoints: {
             500: {
@@ -48,6 +45,12 @@ export function initializeSwipers() {
             768: {
                 slidesPerView: 2.4,
                 spaceBetween: 30,
+                allowTouchMove: false,
+                speed: 5000,
+                autoplay: {
+                    delay: 0,
+                    pauseOnMouseEnter: true,
+                },
             },
         },
     });
@@ -114,7 +117,7 @@ export function initializeSwipers() {
     let CaseMobileSlider = new Swiper("#case-mobile", {
         direction: "horizontal",
         spaceBetween: 30,
-        slidesPerView: 1.1,
+        slidesPerView: 1.4,
 
         allowTouchMove: true,
     });
