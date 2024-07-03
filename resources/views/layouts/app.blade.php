@@ -23,8 +23,8 @@
     <meta property="og:image:alt" content="">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <link rel="canonical" href="http://varflow.com.ua">
-    <meta property="og:url" content="http://varflow.com.ua">
+    <link rel="canonical" href="https://varflow.com.ua">
+    <meta property="og:url" content="https://varflow.com.ua">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ru_RU">
     <!-- Теги Twitter для социальных сетей -->
