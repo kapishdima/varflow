@@ -1,0 +1,92 @@
+.post {
+    margin-top: 10vh;
+
+    &-image-container {
+        width: 100%;
+        height: 400px;
+
+        margin: 24px 0 48px 0;
+        overflow: hidden;
+        border-radius: 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-title {
+        @include oswald-500();
+        font-size: 48px;
+    }
+
+    &-content {
+        font-family: $roboto;
+
+        margin-bottom: 100px;
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: $oswald;
+            font-weight: 400;
+            font-size: 24px;
+            margin-bottom: 18px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 14px;
+        }
+
+        ul {
+            margin-inline-start: 12px;
+            margin: 14px 12px;
+            li {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.posts-list__title {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    @include oswald-500();
+    font-size: 56px;
+}
+
+.posts-list__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    gap: 20px;
+
+    margin-bottom: 100px;
+
+    .posts-list__card {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+
+        &-image-container {
+            border-radius: 20px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-title {
+            font-family: $oswald;
+            font-size: 18px;
+            font-weight: normal;
+            color: #000;
+        }
+    }
+}

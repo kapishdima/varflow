@@ -24,6 +24,7 @@
             <li><a class="menu__list--item" href="/#price-mobile">@lang('default.prices')</a></li>
             <li><a class="menu__list--item" href="/#reviews">@lang('default.reviews')</a></li>
             <li><a class="menu__list--item" href="/#contacts">@lang('default.contacts')</a></li>
+            <li><a class="menu__list--item" href="/posts">@lang('default.blog')</a></li>
         </ul>
     </div>
     <div class="menu__socials">

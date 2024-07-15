@@ -39,4 +39,6 @@ return [
     "contact_success_title" => "Ваша заявка принята!",
     "contact_success_subtitle" => "Наш менеджер уже связывается с вами",
     "projects" => "Проекты",
+    "posts" => "Статьи",
+    "blog" => "Блог",
 ];

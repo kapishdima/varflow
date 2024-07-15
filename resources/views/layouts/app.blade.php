@@ -6,19 +6,19 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@lang('default.site_name')</title>
-    <meta name="description" content=@lang('default.site_desc')>
+    <title>@yield('title', __('default.site_name'))</title>
+    <meta name="description" content="@yield('description', __('default.site_desc'))">
 
 
     <!-- Основные метатеги для SEO -->
     <meta name="robots" content="index, follow">
-    <meta name="keywords" content=@lang('default.site_keywords')>
+    <meta name="keywords" content="@yield('keyword', __('default.site_keywords'))">
     <meta name="author" content="Varflow">
 
     <!-- Open Graph для социальных сетей -->
-    <meta property="og:title" content=@lang('default.site_name')>
-    <meta property="og:site_name" content=@lang('default.site_name')>
-    <meta property="og:description" content=@lang('default.site_desc')>
+    <meta property="og:title" content="@yield('og:title', __('default.site_name'))">
+    <meta property="og:site_name" content="@yield('og:site_name', __('default.site_name'))">
+    <meta property="og:description" content="@yield('og:description', __('default.site_desc'))">
     <meta property="og:image" content="url_to_your_image.jpg">
     <meta property="og:image:alt" content="">
     <meta property="og:image:width" content="1200">
@@ -28,9 +28,9 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ru_RU">
     <!-- Теги Twitter для социальных сетей -->
-    <meta name="twitter:title" content=@lang('default.site_name')>
+    <meta name="twitter:title" content="@yield('twitter:title', __('default.site_name'))">
     <meta name="twitter:site" content="Varflow">
-    <meta name="twitter:description" content=@lang('default.site_desc')>
+    <meta name="twitter:description" content="@yield('twitter:description', __('default.site_desc'))">
     <meta name="twitter:image" content="url_to_your_image.jpg">
     <meta name="twitter:card" content="summary_large_image">
 

@@ -20,6 +20,7 @@
                 <li class="list__item"><a class="list__item--link" href="/#price">@lang('default.prices')</a></li>
                 <li class="list__item"><a class="list__item--link" href="/#reviews">@lang('default.reviews')</a></li>
                 <li class="list__item"><a class="list__item--link" href="/#contacts">@lang('default.contacts')</a></li>
+                <li class="list__item"><a class="list__item--link" href="/posts">@lang('default.blog')</a></li>
             </ul>
         </nav>
 
